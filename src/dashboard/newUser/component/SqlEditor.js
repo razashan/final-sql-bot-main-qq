@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import CodeMirror from "@uiw/react-codemirror";
-// import { ThemeProvider, createTheme } from "@mui/material/styles"; // Import from @mui/material
-// import CssBaseline from "@mui/material/CssBaseline"; // Add CssBaseline for consistent styling
 import {
   CompletionContext,
   autocompletion,
@@ -12,9 +10,6 @@ import { vscodeKeymap } from "@replit/codemirror-vscode-keymap";
 import { EditorView, keymap } from "@codemirror/view";
 import { tags } from "@lezer/highlight";
 import { HighlightStyle } from "@codemirror/language";
-
-// const lightTheme = createTheme(); // You can customize the theme using the createTheme function
-// const darkTheme = createTheme({ palette: { mode: "dark" } }); // Adjust the theme for dark mode
 const KEYWORDS = [
   "select",
   "from",
@@ -102,7 +97,7 @@ const dialect = SQLDialect.define({
 });
 
 const SqlEditor = ({ onQueryChange, value }) => {
- 
+
   const codeTheme = EditorView.theme(
     {
       "&": {
@@ -134,7 +129,7 @@ const SqlEditor = ({ onQueryChange, value }) => {
     { dark: true }
   );
 
-  
+
   return (
     <div>
       <CodeMirror
@@ -145,16 +140,6 @@ const SqlEditor = ({ onQueryChange, value }) => {
         extensions={[sql({ dialect }), keymap.of(vscodeKeymap)]}
       />
     </div>
-    // <ThemeProvider theme={theme}>
-    //   <CssBaseline /> {/* Add CssBaseline to apply baseline styles */}
-    //   <button onClick={() => setTheme(lightTheme)}>Light</button>
-    //   <button onClick={() => setTheme(darkTheme)}>Dark</button>
-    //   <div>
-    //     <h1>Hello CodeSandbox</h1>
-    //     <h2>Start editing to see some magic happen!</h2>
-
-    //   </div>
-    // </ThemeProvider>
   );
 };
 
