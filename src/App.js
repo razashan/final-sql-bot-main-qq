@@ -45,12 +45,10 @@ function App() {
   pathname = pathname.split("/")[1];
 
   const location = useLocation();
-  const [isLoggedIn, setIsLoggedIn] = useState(null);
-  const [loggedAsAdmin, setLoggedAsAdmin] = useState(false);
-
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
   const adminEmail = process.env.REACT_APP_ADMIN_EMAIL;
   const password = process.env.REACT_APP_ADMIN_PASSWORD;
-  const [isAdmin, setIsAdmin] = useState(false);
+  const [isAdmin, setIsAdmin] = useState(true);
 
   const [activeTab, setActiveTab] = useState("SQL Dashboard");
   const [databasee, setDatabasee] = useState();
@@ -96,29 +94,8 @@ function App() {
     fetchAuthState();
   }, [location]);
 
-  if (isLoggedIn === null) {
-    return (
-      <div
-        className="App"
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          height: "100vh",
-        }}
-      >
-        <ToastContainer />
-        <div className="loading">
-          <ClipLoader />
-        </div>
-      </div>
-    );
-  }
-
   const handleLogin = (loggedInAsAdmin) => {
     // Do something with the loggedInAsAdmin value
-
-    setLoggedAsAdmin(loggedInAsAdmin);
   };
 
   return (
@@ -181,17 +158,13 @@ function App() {
             <Route
               path="/user-dashboard"
               element={
-                isLoggedIn ? (
-                  <UserDashboard
-                    isAdmin={isAdmin}
-                    setActiveTab={setActiveTab}
-                    activeTab={activeTab}
-                    databasee={databasee}
-                    setDatabasee={setDatabasee}
-                  />
-                ) : (
-                  <Login onLogin={handleLogin} />
-                )
+                <UserDashboard
+                  isAdmin={isAdmin}
+                  setActiveTab={setActiveTab}
+                  activeTab={activeTab}
+                  databasee={databasee}
+                  setDatabasee={setDatabasee}
+                />
               }
             />
 

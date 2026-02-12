@@ -241,16 +241,11 @@ export const signOutUser = async () => {
 
 // get currently authenticated user's id
 const getCurrentUser = () => {
-    return new Promise((resolve, reject) => {
-        const auth = getAuth();
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                resolve(user);
-            } else {
-                resolve(false);
-            }
-            unsubscribe();
-        });
+    return Promise.resolve({
+        uid: "mock-user-id",
+        email: "guest@example.com",
+        displayName: "Guest User",
+        photoURL: "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
     });
 };
 
@@ -291,32 +286,14 @@ export const editUserProfile = async (data) => {
 
 
 // Get current user data
-
 export const getUserDataForCurrentUser = async () => {
-    try {
-        const userId = await getCurrentUser();
-        return new Promise(async (resolve, reject) => {
-            if (userId) {
-                const userDataArray = [];
-                const userDocRef = doc(firestoredb, 'Users', userId.uid);
-                const userDocSnapshot = await getDoc(userDocRef);
-
-                if (userDocSnapshot.exists()) {
-                    const userData = userDocSnapshot.data();
-                    userDataArray.push(userData);
-                } else {
-                    console.error('User document not found for UID ' + userId);
-                }
-
-                resolve(userDataArray.length > 0 ? userDataArray[0] : null);
-            } else {
-                resolve(null);
-            }
-        });
-    } catch (error) {
-        console.error('Error retrieving user data:', error);
-        throw error;
-    }
+    return {
+        uid: "mock-user-id",
+        email: "guest@example.com",
+        firstName: "Guest",
+        lastName: "User",
+        isAdmin: true
+    };
 };
 
 // get all the users
@@ -442,15 +419,10 @@ export const signInWithGoogle = async () => {
 
 
 export const getUserProfile = async () => {
-    const userId = await getCurrentUser();
-
-    // const { displayName, photoURL } = userId;
-    let displayName = userId.displayName;
-    let photoURL = userId.photoURL;
-    let uid = userId.uid;
-
     return {
-        uid, displayName, photoURL
+        uid: "mock-user-id",
+        displayName: "Guest User",
+        photoURL: "https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y"
     };
 };
 export const getUserByUid = async (getuser) => {
@@ -473,25 +445,7 @@ export const getUserByUid = async (getuser) => {
 
 
 export function checkAuthState() {
-
-    return new Promise((resolve, reject) => {
-        const unsubscribe = onAuthStateChanged(auth, (user) => {
-            if (user) {
-                // User is signed in, you can access the user object
-                unsubscribe(); // Stop listening to further changes
-                resolve(true);
-            } else {
-                // No user is signed in, or the user signed out
-                unsubscribe(); // Stop listening to further changes
-                resolve(false);
-                // You can redirect to the login page or perform other actions here
-            }
-        }, (error) => {
-            // Handle any errors during the authentication state check
-            unsubscribe(); // Stop listening to further changes
-            reject(error);
-        });
-    });
+    return Promise.resolve(true);
 }
 
 
