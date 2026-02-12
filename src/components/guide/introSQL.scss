@@ -1,0 +1,41 @@
+.sql-intro {
+  // background-color: red ;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  //
+  .title {
+    font-family: Volkhov;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  // btns
+
+  .btns {
+    display: flex;
+    justify-content: space-between;
+
+    .guide-btn {
+      background-color: #43dde7;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap:10px;
+    }
+  }
+
+  // content
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+  }
+}

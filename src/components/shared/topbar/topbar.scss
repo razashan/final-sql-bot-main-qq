@@ -1,0 +1,31 @@
+.home_topbar {
+  color: #fff;
+  background-color: #40444b;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // background-color: red;
+  // padding-bottom: 10px;
+
+  .RightToLeft {
+    padding-top: 10px;
+    display: flex;
+    gap: 40px;
+  }
+
+  .sale-timer {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+
+    .timer {
+      background-color: white;
+      color: black;
+      padding: 0px 14px;
+      border-radius: 5px;
+      font-weight: bold;
+      display: inline-block;
+    }
+  }
+}

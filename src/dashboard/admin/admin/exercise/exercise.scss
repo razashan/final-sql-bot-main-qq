@@ -1,0 +1,155 @@
+.exercise-sec {
+  display: flex;
+  flex-direction: column;
+  row-gap: 67px;
+  padding: 40px;
+  max-width: 880px;
+
+  h2 {
+    color: #1f192f;
+    font-family: IRANSans(FaNum);
+    font-size: 42.624px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 0px;
+
+    span {
+      font-family: Judson;
+    }
+  }
+
+  .detail {
+    display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+
+    h4 {
+      color: #444;
+      font-family: IRANSansX;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px;
+      /* 100% */
+      margin: 0px;
+    }
+
+    p {
+      color: #797d8c;
+      font-family: IRANSansX;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      /* 150% */
+      margin: 0px;
+    }
+
+    .first,
+    .second {
+      display: flex;
+      flex-direction: column;
+      row-gap: 3px;
+    }
+
+    .third {
+      border-radius: 4px;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      background: #f4f4f4;
+      padding: 20px 18px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+
+      .small-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px 11px;
+
+        div {
+          width: 135px;
+          border-radius: 4px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          background: #eee;
+          padding: 8px 0px 6.79px 0px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .exercise-sec {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px;
+    max-width: 700px;
+
+    h2 {
+      font-size: 35px;
+    }
+
+    .detail {
+      row-gap: 10px;
+
+      h4 {
+        font-size: 22px;
+        line-height: 100%;
+        /* 100% */
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 130%;
+        /* 150% */
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .exercise-sec {
+    row-gap: 20px;
+    padding: 20px;
+    width: 100%;
+
+    h2 {
+      font-size: 30px;
+      line-height: 100%;
+    }
+
+    .detail {
+      row-gap: 10px;
+
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 120%;
+      }
+
+      .third {
+        padding: 15px;
+        row-gap: 10px;
+
+        .small-tabs {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 10px;
+          justify-content: center;
+
+          div {
+            width: 100%;
+            padding: 8px;
+          }
+        }
+      }
+    }
+  }
+}

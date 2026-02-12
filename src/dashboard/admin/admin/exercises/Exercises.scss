@@ -1,0 +1,662 @@
+.analytic-container {
+  padding: 50px 100px 80px 100px;
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 125px);
+  .exercise-name {
+    .exercise-inner {
+      flex-direction: column;
+      gap: 10px !important;
+
+      input {
+        width: 100%;
+        padding: 0 10px;
+        height: 40px;
+        border-radius: 4px;
+      }
+
+      input::placeholder {
+        font-size: 14px;
+      }
+
+      button {
+        width: 180px;
+        height: 45px;
+        padding: 10px 15px;
+      }
+
+      select {
+        width: 100%;
+        margin-top: 10px;
+        appearance: none; /* Remove default arrow in some browsers */
+        padding: 13.5px 25px; /* Adjust padding to increase the clickable area */
+        //width: calc(100% - 30px); /* Adjust width to account for padding */
+        border-radius: 8px;
+        border: 1px solid #202225;
+        background: #fff;
+        background-image: url("../../../../assets/icons/drop-down.png"); /* Replace with your own arrow icon */
+        background-repeat: no-repeat;
+        background-position: calc(100% - 23px) center; /* Adjust position to align with the right edge */
+        background-size: 18px 18px;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        // background: #fff;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        // color: #d6d5d5;
+        font-family: IRANSansX;
+        font-size: 20px;
+        font-weight: 300;
+
+        &::-ms-expand {
+          display: none; /* Remove the arrow in IE10 and IE11 */
+        }
+
+        option {
+          color: black;
+          font-family: IRANSansX;
+          font-size: 16px;
+
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+    }
+
+    .dropdown_ {
+      .dropdown {
+        left: 0px;
+        top: 140px !important;
+
+        .select-database {
+          width: 180px;
+          padding: 10px 0px;
+
+          .item {
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+  .analytics {
+    display: flex;
+    padding-top: 40px;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .exercise-analytics {
+      display: flex;
+      flex-direction: column;
+      row-gap: 120px;
+      .analytics_content {
+        border: 1px solid #202225;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        padding: 13.5px 25px;
+
+        border-radius: 8px;
+      }
+      .total-user {
+      }
+    }
+
+    // .bar-chart{
+    //   width: 300px;
+    // }
+  }
+}
+
+.exercises {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+
+  .dropdown_ {
+    // display: inline-block;
+    width: fit-content;
+    .dropdown {
+      display: none;
+      position: absolute;
+      left: 123px;
+      top: 168px;
+
+      .select-database {
+        // display: none;
+        border-radius: 8px;
+        border: 1px solid #2b54ff;
+        background: #fff;
+        width: 226.257px;
+        height: auto;
+        padding: 11px 0px;
+        // display: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+        .item {
+          width: 100%;
+          display: flex;
+          cursor: pointer;
+          padding: 0 24px;
+          justify-content: space-between;
+          gap: 10px;
+          align-items: center;
+
+          img {
+            width: 19px;
+            height: 19px;
+          }
+        }
+
+        .item:hover {
+          background-color: lavender;
+        }
+      }
+    }
+
+    .show-drop {
+      display: block;
+    }
+
+    button {
+      border-radius: 8px;
+      border: 1px solid #2b54ff;
+      background: #fff;
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      width: 226.257px;
+      height: 53.267px;
+      display: flex;
+      align-items: center;
+      padding: 10px 23px;
+      justify-content: space-between;
+    }
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 25px;
+    column-gap: 10px;
+  }
+}
+
+// exercisescard component styling
+
+.exercisescard {
+  .exer1 {
+    .exerhead {
+      h3 {
+        color: #000;
+        font-family: "IRANSansX";
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+      }
+    }
+    .exercont {
+      width: 90%;
+      border-radius: 8px;
+      border: 1px solid #2b54ff;
+      background: rgba(251, 251, 251, 0.3);
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      padding: 14px 34px;
+
+      p {
+        color: #453e3e;
+        font-family: "IRANSansX";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+  }
+}
+
+// OpenExercise component styling
+.intromain {
+  padding: 42px 72px;
+  height: calc(100vh - 125px);
+  overflow: auto;
+  .introtop {
+    width: 88%;
+    border-radius: 8px;
+    // border: 1px solid #000;
+    background: #fff;
+    // padding: 20px 87px 19px 44px;
+    margin-top: 10px;
+
+    input {
+      width: 100%;
+      outline: none;
+      color: #000080;
+      font-family: "IRANSansX";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 100%;
+      padding: 13.5px 25px;
+      border-radius: 8px;
+      border: 1px solid #202225;
+      background: #fff;
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      margin: 0px;
+    }
+
+    textarea {
+      width: 100%;
+      outline: none;
+      color: #000080;
+      font-family: "IRANSansX";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 100%;
+      min-height: 250px;
+      padding: 13.5px 25px;
+      border-radius: 8px;
+      border: 1px solid #202225;
+      background: #fff;
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      margin: 0px;
+    }
+
+    .bottons {
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      justify-content: end;
+      gap: 30px;
+
+      button {
+        border: none;
+        padding: 6px 15px;
+        color: white;
+        background-color: #000;
+        border-radius: 5px;
+      }
+    }
+
+    h2 {
+      color: #444;
+      font-family: "IRANSansX";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 100% */
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: #444;
+      font-family: IRANSansX;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 120% */
+      padding-top: 27px;
+    }
+    p {
+      color: #797d8c;
+      text-align: justify;
+      font-family: IRANSansX;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      padding-top: 14px;
+    }
+  }
+
+  .introbotom {
+    // padding-top: 29px;
+    width: 88%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    .botleft {
+      h1 {
+        color: #000;
+        font-family: IRANSansX;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 7px;
+      }
+
+      //   width: 27%;
+      .topcards {
+        padding: 19px 13px;
+        height: 200px;
+        width: 200px;
+
+        border-radius: 8px;
+        border: 1px solid #000;
+        background: #fbfbfb;
+        // display: flex;
+        // flex-wrap: wrap;
+        // column-gap: 5px;
+
+        input {
+          border-radius: 8px;
+          border: 1px solid #202225;
+          background: #fff;
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+          width: 226.257px;
+          height: 53.267px;
+          padding-left: 20px;
+          width: 100%;
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .bottomcards {
+      padding: 19px 13px;
+      width: 306px;
+      height: 142px;
+      border-radius: 8px;
+      border: 1px solid #000;
+      background: #fbfbfb;
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 5px;
+
+      button {
+        width: 135px;
+        height: 39px;
+        border-radius: 4px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        background: #eee;
+
+        color: #797d8c;
+        font-family: IRANSansX;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+    }
+    .botomright {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      h1 {
+        color: #000;
+        font-family: IRANSansX;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-bottom: 7px;
+      }
+      .label {
+        color: #444;
+        font-family: IRANSansX;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 24px; /* 120% */
+        // padding-top: 27px;
+      }
+
+      .add-table-btn {
+        border: none;
+        width: 150px;
+        height: 45.267px;
+        padding: 8px 15px;
+        border-radius: 7px;
+        background-color: #000;
+        color: white;
+        font-size: 19.98px;
+        font-weight: 400;
+      }
+      //   width: 27%;
+      .topcards {
+        padding: 19px 13px;
+        // width: 306px;
+        width: 100%;
+        height: 230px;
+        border-radius: 8px;
+        border: 1px solid #000;
+        background: #fbfbfb;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+
+        button {
+          width: 135px;
+          height: 39px;
+          border-radius: 4px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          background: #eee;
+          text-align: center;
+          color: #797d8c;
+          font-family: IRANSansX;
+          font-size: 11px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+        }
+      }
+
+      .bottomcards {
+        padding: 19px 13px;
+        width: 306px;
+        height: 142px;
+        border-radius: 8px;
+        border: 1px solid #000;
+        background: #fbfbfb;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5px;
+
+        button {
+          width: 135px;
+          height: 39px;
+          border-radius: 4px;
+          border: 1px solid rgba(0, 0, 0, 0.2);
+          background: #eee;
+
+          color: #797d8c;
+          font-family: IRANSansX;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 24px; /* 150% */
+        }
+      }
+      .btns {
+        display: flex;
+        justify-content: space-between;
+
+        .go-back {
+          display: flex;
+          justify-content: start;
+          margin-top: 50px;
+          button {
+            width: 150px;
+            height: 45.267px;
+            border-radius: 8px;
+            color: white;
+            background: #000;
+            border: none;
+            outline: none;
+            box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+            color: #fff;
+            font-family: IRANSansX;
+            font-size: 19.98px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .analytic-container {
+    height: calc(100vh - 100px);
+  }
+
+  .exercises {
+    padding: 80px 40px 40px 40px;
+
+    .dropdown_ {
+      .dropdown {
+        left: 40px;
+        top: 140px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .analytic-container {
+    padding: 20px;
+
+    .exercise-name {
+      .exercise-inner {
+        input {
+          height: 30px;
+        }
+
+        select {
+          padding: 10px;
+          font-size: 14px;
+          border-radius: 5px;
+          option {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+
+    .analytics {
+      flex-direction: column;
+
+      .bar-chart {
+        .recharts-wrapper {
+          width: 100% !important;
+          // background-color: #000080;
+          .recharts-legend-wrapper {
+            width: 100% !important;
+            ul {
+              font-size: 11px;
+              // background-color: red;
+              overflow: hidden;
+            }
+          }
+          .recharts-tooltip-wrapper {
+            top: 10% !important;
+            // transform: translate(27%, 20%) !important;
+          }
+        }
+      }
+    }
+  }
+
+  .exercises {
+    padding: 40px 15px;
+    position: static;
+
+    .dropdown_ {
+      .dropdown {
+        left: 15px;
+        top: 100px;
+
+        .select-database {
+          padding: 10px 0px;
+          width: 180px;
+
+          .item {
+            padding: 0 15px;
+          }
+        }
+      }
+
+      button {
+        width: 180px;
+        height: 45px;
+        padding: 10px 15px;
+      }
+    }
+
+    .cards {
+      grid-template-columns: auto;
+    }
+  }
+
+  .exercisescard {
+    .exer1 {
+      .exercont {
+        width: 98%;
+
+        padding: 12px 20px;
+      }
+    }
+  }
+
+  // OpenExercise component styling
+  .intromain {
+    padding: 40px 20px;
+    .introtop {
+      padding: 0px;
+      width: 100%;
+
+      input {
+        padding: 10px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+    }
+    .introbotom {
+      flex-direction: column;
+      width: 100%;
+      .botleft {
+        .lefttop {
+          h1 {
+            font-size: 20px;
+          }
+        }
+
+        .leftbotom {
+          padding: 20px;
+        }
+      }
+
+      .botomright {
+        h1 {
+          font-size: 22px;
+        }
+
+        .add-table-btn {
+          height: 38px;
+          padding: 0;
+          font-size: 16px;
+        }
+        .btns {
+          .go-back {
+            button {
+              width: 130.522px;
+              height: 38.267px;
+              border-radius: 8px;
+              background: #2b54ff;
+              border: none;
+              outline: none;
+              box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+              color: #fff;
+              font-family: IRANSansX;
+              font-size: 16px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,101 @@
+.sql-command-categories {
+  //   background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  //
+  .title {
+    font-family: Volkhov;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  // btns
+  .btns {
+    display: flex;
+    justify-content: space-between;
+
+    .guide-btn {
+      background-color: #43dde7;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  // content
+  .content {
+    display: flex;
+    flex-direction: column;
+    color: black;
+
+    .all-terms {
+      padding: 20px 0px;
+      border-top: 1px solid #f1f1f1;
+      border-bottom: 1px solid #f1f1f1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .term-title {
+        font-family: Volkhov;
+        font-size: 20px;
+      }
+
+      .term-ans {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .desc {
+          font-size: 16px;
+        }
+      }
+
+      .table {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 7px;
+        display: flex;
+
+        .table-left {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: 150px;
+          //   background-color: red;
+
+          p {
+            font-size: 16px;
+            font-weight: 500;
+          }
+        }
+
+        .table-right {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          width: calc(100% - 150px);
+          //   background-color: greenyellow;
+
+          p {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    .all-terms:nth-last-child(1) {
+      border-bottom: none;
+      // background-color: red;
+    }
+  }
+}

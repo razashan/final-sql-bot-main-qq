@@ -1,0 +1,10 @@
+{
+    "base": "vs-dark",
+    "inherit": true,
+    "rules": [
+      { "token": "comment", "foreground": "green", "fontStyle": "italic" },
+      { "token": "keyword", "foreground": "blue" }
+     
+    ]
+  }
+  

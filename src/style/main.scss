@@ -1,0 +1,16 @@
+@import url("./_global.scss");
+@import url("./_typography.scss");
+@import url("./_variable.scss");
+@import url("./_home.scss");
+@import url("./shared/_navbar.scss");
+@import url("./shared/_footer.scss");
+@import url("../dashboard/User/styles/_userdashboard.scss");
+
+// new pages
+@import url("../page//about/about.scss");
+@import url("../components/home/partnerWithUS.scss");
+@import url("../page//partnership/partnershipPage.scss");
+@import url("../components/pricing/pricing.scss");
+@import url('../page/guide/guidePage.scss');
+
+

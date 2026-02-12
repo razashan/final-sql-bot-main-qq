@@ -1,0 +1,744 @@
+@font-face {
+  font-family: "IRANSansX;";
+  src: url("../../../../../public/font/IRANSansXRegular.ttf");
+}
+
+.add-exercises {
+  padding: 111px 119px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: calc(100vh - 125px);
+  overflow: auto;
+
+  .exercise-name {
+    position: relative;
+    label {
+      color: #000 !important;
+      font-family: IRANSansX;
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    .exercise-inner {
+      display: flex;
+      gap: 33px;
+      justify-content: space-between;
+      input {
+        border-radius: 8px;
+        border: 1px solid #202225;
+        background: #fff;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        width: 226.257px;
+        height: 53.267px;
+        padding-left: 20px;
+        width: 81%;
+        margin-bottom: 0;
+      }
+
+      select {
+        width: 50%;
+        appearance: none;
+        padding: 13.5px 25px;
+        border-radius: 8px;
+        border: 1px solid #202225;
+        background: #fff;
+        background-image: url("../../../../assets/icons/drop-down.png");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 23px) center;
+        background-size: 23px 23px;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        // color: #d6d5d5;
+        font-family: IRANSansX;
+        font-size: 20px;
+        font-weight: 300;
+
+        &:focus {
+          // border-color: #202225; /* Set the border color to blue when focused */
+          // border-width: 1px;
+          outline: #202225; /* Remove the default focus outline */
+          outline-width: 1px;
+          outline-style: solid;
+          // border: none;
+        }
+
+        &::-ms-expand {
+          display: none;
+        }
+      }
+
+      option {
+        // color: #d6d5d5;
+        font-family: IRANSansX;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+
+      input::placeholder {
+        color: #c1c1c1;
+
+        font-family: IRANSansX;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+
+      button {
+        border-radius: 8px;
+        border: 1px solid #202225;
+        background: #fff;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        width: 226.257px;
+        height: 53.267px;
+        display: flex;
+        color: #202225;
+        font-family: IRANSansX;
+        font-size: 19.98px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        justify-content: space-between;
+        padding: 10px 23px;
+        align-items: center;
+      }
+    }
+    .dropdown_ {
+      width: fit-content;
+      .dropdown {
+        display: none;
+        position: absolute;
+        right: 0px;
+        top: 100px;
+
+        .select-database {
+          // display: none;
+          border-radius: 8px;
+          border: 1px solid #202225;
+          background: #fff;
+          width: 226.257px;
+          height: auto;
+          padding: 11px 0;
+          // display: none;
+          display: flex;
+          flex-direction: column;
+          row-gap: 12px;
+          .item {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            cursor: pointer;
+            padding: 0 24px;
+            align-items: center;
+
+            img {
+              width: 19px;
+              height: 19px;
+            }
+          }
+        }
+        .item:hover {
+          background-color: lavender;
+        }
+      }
+
+      .show-drop {
+        display: block;
+      }
+    }
+  }
+
+  .soccercountry {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    .soccer {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      align-items: center;
+      border-radius: 3.875px;
+      border: 0.969px solid rgba(0, 0, 0, 0.2);
+      background: #eee;
+      padding: 7px 10px 7px 12px;
+      .soctext {
+        p {
+          color: #797d8c;
+          font-family: IRANSansX;
+          font-size: 15.502px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 23.253px;
+        }
+      }
+      .crosicon {
+        button {
+          border: none;
+        }
+      }
+    }
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+
+    label {
+      color: #000;
+      font-family: IRANSansX;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    textarea {
+      width: 100%;
+      outline: none;
+      color: #000080;
+      font-family: "IRANSansX";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      height: 123.812px;
+      line-height: 100%;
+      padding: 17px 25px;
+      border-radius: 8px;
+      border: 1px solid #202225;
+      background: #fff;
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      margin: 0px;
+    }
+
+    textarea::placeholder {
+      color: #c1c1c1;
+      font-family: IRANSansX;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+  }
+
+  .add-question {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    .add-question-btn {
+      margin-bottom: 12px;
+      button {
+        width: 223.15px;
+        height: 53.267px;
+        border-radius: 8px;
+        background: #202225;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        border: none;
+        outline: none;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 22px;
+      }
+    }
+
+    .button_modal {
+      display: flex;
+      //   gap: 20px;
+      // flex-direction: column;
+
+      column-gap: 30px;
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        // column-gap: 10px;
+        row-gap: 10px;
+
+        label {
+          color: #000;
+          font-family: IRANSansX;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        textarea {
+          width: 100%;
+          outline: none;
+          color: #000080;
+          font-family: "IRANSansX";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          height: 123.812px;
+          line-height: 100%;
+          padding: 17px 25px;
+          border-radius: 8px;
+          border: 1px solid #202225;
+          background: #fff;
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+          margin: 0px;
+        }
+
+        input {
+          border-radius: 8px;
+          border: 1px solid #202225;
+          background: #fff;
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+          width: 226.257px;
+          height: 53.267px;
+          padding-left: 20px;
+          width: 100%;
+          margin: 0;
+        }
+
+        input::placeholder {
+          color: #c1c1c1;
+
+          font-family: IRANSansX;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 13px;
+
+          .active {
+            width: 91.202px;
+            height: 37.813px;
+            border-radius: 5.679px;
+            border: 0.71px solid #202225;
+            background: #202225;
+            box-shadow: 0px 4.25929px 11.35812px 0px rgba(0, 0, 0, 0.15);
+            color: white;
+          }
+
+          .btn {
+            width: 91.202px;
+            height: 37.813px;
+            border-radius: 5.679px;
+            border: 0.71px solid #202225;
+            color: #202225;
+            background: #fff;
+            box-shadow: 0px 4.25929px 11.35812px 0px rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+
+      .right {
+        width: 50%;
+        row-gap: 10px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+          color: #000;
+          font-family: IRANSansX;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+        textarea {
+          width: 100%;
+          outline: none;
+          color: #000080;
+          font-family: "IRANSansX";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          height: 123.812px;
+          line-height: 100%;
+          padding: 17px 25px;
+          border-radius: 8px;
+          border: 1px solid #202225;
+          background: #fff;
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+          margin: 0px;
+        }
+
+        input {
+          border-radius: 8px;
+          border: 1px solid #202225;
+          background: #fff;
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+          width: 226.257px;
+          height: 53.267px;
+          padding-left: 20px;
+          width: 100%;
+          margin: 0;
+        }
+
+        input::placeholder {
+          color: #c1c1c1;
+
+          font-family: IRANSansX;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 13px;
+
+          .active {
+            width: 91.202px;
+            height: 37.813px;
+            border-radius: 5.679px;
+            border: 0.71px solid #202225;
+            background: #202225;
+            box-shadow: 0px 4.25929px 11.35812px 0px rgba(0, 0, 0, 0.15);
+            color: white;
+          }
+
+          .btn {
+            width: 91.202px;
+            height: 37.813px;
+            border-radius: 5.679px;
+            border: 0.71px solid #202225;
+            color: #202225;
+            background: #fff;
+            box-shadow: 0px 4.25929px 11.35812px 0px rgba(0, 0, 0, 0.15);
+          }
+        }
+      }
+    }
+
+    .cards {
+      // width: 100%;
+      .questions {
+        display: flex;
+        flex-wrap: wrap;
+        // flex-direction: column;
+        gap: 40px;
+        width: 100%;
+        // border: 1px solid #2b54ff;
+        .card {
+          width: 45%;
+          border: 1px solid #202225;
+          padding: 15px;
+          display: flex;
+          flex-direction: column;
+          border-radius: 8px;
+          gap: 10px;
+          background: #fff;
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+          .remove-btn {
+            align-self: flex-end;
+            // width: 30%;
+            // padding: 10px !important;
+          }
+        }
+      }
+    }
+    .createexercise {
+      display: flex;
+      // width: 100%;
+      justify-content: end;
+      // text-align: center;
+
+      button {
+        width: 223.15px;
+        height: 53.267px;
+        border-radius: 8px;
+        background: #202225;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        border: none;
+        outline: none;
+
+        color: #fff;
+        font-family: IRANSansX;
+        font-size: 19.98px;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.add_question_modal {
+  .modal-body {
+    .aiQuestion {
+      display: flex;
+      justify-content: space-between;
+    }
+    // border: 1px solid #2b54ff;
+    border-radius: 8px;
+    .input {
+      display: flex;
+      flex-direction: column;
+      label {
+        color: #000 !important;
+        font-weight: 500;
+      }
+      .question-name {
+        border: 1px solid #202225;
+        padding: 10px 10px;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+.modal-body {
+  .input {
+    display: flex;
+    flex-direction: column;
+
+    label {
+      color: #000 !important;
+      font-weight: 500;
+    }
+
+    input {
+      border: 1px solid #202225;
+      padding: 10px 10px;
+      border-radius: 4px;
+      background: #fff;
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .add-exercises {
+    padding: 40px 40px;
+    height: calc(100vh - 100px);
+    .add-question {
+      div {
+        .left {
+          input::placeholder {
+            font-size: 14px;
+          }
+        }
+
+        .right {
+          input::placeholder {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .add-exercises {
+    padding: 30px 60px;
+
+    .add-question {
+      div {
+        .left {
+          input {
+            padding-left: 10px;
+            height: 45px;
+          }
+
+          input::placeholder {
+            font-size: 12px;
+          }
+        }
+
+        .right {
+          input {
+            padding-left: 10px;
+            height: 45px;
+          }
+
+          input::placeholder {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .add-exercises {
+    padding: 30px 15px;
+
+    .soccercountry {
+      // justify-content: space-between;
+      // display: grid;
+      // grid-template-columns: auto auto;
+
+      gap: 10px;
+
+      .soccer {
+        gap: 5px;
+
+        padding: 5px 10px;
+
+        // font-size: 11px;
+      }
+    }
+
+    .exercise-name {
+      .exercise-inner {
+        flex-direction: column;
+        gap: 10px !important;
+
+        input {
+          width: 100%;
+          padding: 0 10px;
+          height: 40px;
+          border-radius: 4px;
+        }
+
+        input::placeholder {
+          font-size: 14px;
+        }
+
+        button {
+          width: 180px;
+          height: 45px;
+          padding: 10px 15px;
+        }
+
+        select {
+          width: 100%;
+          appearance: none; /* Remove default arrow in some browsers */
+          padding: 10.5px 25px; /* Adjust padding to increase the clickable area */
+          //width: calc(100% - 30px); /* Adjust width to account for padding */
+          border-radius: 6px;
+          border: 1px solid #202225;
+          background: #fff;
+          background-image: url("../../../../assets/icons/drop-down.png"); /* Replace with your own arrow icon */
+          background-repeat: no-repeat;
+          background-position: calc(100% - 23px) center; /* Adjust position to align with the right edge */
+          background-size: 18px 18px;
+          appearance: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+          // background: #fff;
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+          // color: #d6d5d5;
+          font-family: IRANSansX;
+          font-size: 16px;
+          font-weight: 300;
+
+          &::-ms-expand {
+            display: none; /* Remove the arrow in IE10 and IE11 */
+          }
+
+          option {
+            color: #d6d5d5;
+            font-family: IRANSansX;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
+      }
+
+      .dropdown_ {
+        .dropdown {
+          left: 0px;
+          top: 140px !important;
+
+          .select-database {
+            width: 180px;
+            padding: 10px 0px;
+
+            .item {
+              padding: 0 15px;
+            }
+          }
+        }
+      }
+    }
+
+    .add-question {
+      .add-question-btn {
+        button {
+          width: 180px !important;
+          height: 45px !important;
+          padding: 10px 15px;
+        }
+      }
+      .button_modal {
+        flex-direction: column;
+        .left {
+          width: 100%;
+          margin-bottom: 10px;
+          input {
+            padding-left: 10px;
+            padding-right: 10px;
+            height: 40px;
+            border-radius: 4px;
+          }
+
+          input::placeholder {
+            font-size: 12px;
+          }
+
+          .buttons {
+            flex-direction: row;
+          }
+        }
+
+        .right {
+          width: 100%;
+          margin-bottom: 10px;
+
+          input {
+            padding-left: 10px;
+            padding-right: 10px;
+
+            height: 40px;
+            border-radius: 4px;
+          }
+
+          input::placeholder {
+            font-size: 12px;
+          }
+
+          .buttons {
+            flex-direction: row;
+          }
+        }
+      }
+
+      .cards {
+        .questions {
+          .card {
+            width: 100%;
+          }
+        }
+      }
+
+      .createexercise {
+        button {
+          width: 180px;
+          height: 38px;
+          font-size: 16px;
+        }
+      }
+    }
+
+    .description {
+      textarea {
+        padding: 10px;
+      }
+      textarea::placeholder {
+        font-size: 14px;
+      }
+    }
+  }
+}

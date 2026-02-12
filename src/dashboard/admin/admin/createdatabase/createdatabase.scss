@@ -1,0 +1,559 @@
+.create-database {
+  padding: 111px 21px 80px 119px;
+  height: calc(100vh - 125px);
+  overflow: scroll;
+
+  .createdatabase-btn {
+    display: flex;
+    margin: 0px 0px 0px auto;
+    color: #fff;
+    font-family: "IRANSansX";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    border-radius: 4px;
+    border: 1px solid #202225;
+    background: #202225;
+    padding: 9px 6px 5px 6px;
+    border: none;
+  }
+
+  .inner-content {
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    padding-right: 180px;
+    row-gap: 23px;
+
+    label {
+      color: #000;
+      font-family: "IRANSansX";
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 100%;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      outline: none;
+      color: #000080;
+      font-family: "IRANSansX";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: 100%;
+      padding: 13.5px 25px;
+      border-radius: 8px;
+      border: 1px solid #202225;
+      background: #fff;
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      margin: 0px;
+    }
+
+    select {
+      width: 50%;
+      appearance: none; /* Remove default arrow in some browsers */
+      padding: 13.5px 25px; /* Adjust padding to increase the clickable area */
+      //width: calc(100% - 30px); /* Adjust width to account for padding */
+      border-radius: 8px;
+      border: 1px solid #202225;
+      background: #fff;
+      background-image: url("../../../../assets/icons/drop-down.png"); /* Replace with your own arrow icon */
+      background-repeat: no-repeat;
+      background-position: calc(100% - 23px) center; /* Adjust position to align with the right edge */
+      background-size: 23px 23px;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      // background: #fff;
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      // color: #d6d5d5;
+      font-family: IRANSansX;
+      font-size: 16px;
+      font-weight: 300;
+
+      &:focus {
+        // border-color: #202225; /* Set the border color to blue when focused */
+        // border-width: 1px;
+        outline: #202225; /* Remove the default focus outline */
+        outline-width: 1px;
+        outline-style: solid;
+        // border: none;
+      }
+
+      &::-ms-expand {
+        display: none; /* Remove the arrow in IE10 and IE11 */
+      }
+
+      option {
+        // color: #d6d5d5;
+        font-family: IRANSansX;
+        font-size: 16px !important;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    input::placeholder {
+      color: #c1c1c1;
+      font-family: IRANSansX;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    textarea::placeholder {
+      color: #c1c1c1;
+      font-family: IRANSansX;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    textarea {
+      min-height: 250.416px;
+    }
+
+    .soccercountry {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      .soccer {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+        align-items: center;
+        border-radius: 3.875px;
+        border: 0.969px solid rgba(0, 0, 0, 0.2);
+        background: #eee;
+        padding: 7px 10px 7px 12px;
+        .soctext {
+          p {
+            color: #797d8c;
+            font-family: IRANSansX;
+            font-size: 15.502px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 23.253px;
+          }
+        }
+        .crosicon {
+          button {
+            border: none;
+          }
+        }
+      }
+    }
+    .exercise-name {
+      .exercise-inner {
+        display: flex;
+        align-items: center;
+        column-gap: 43px;
+
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 173.749px;
+          height: 53px;
+          border-radius: 8px;
+          border: 1px solid #202225;
+          background: #fff;
+          box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+          color: #202225;
+          font-family: "IRANSansX";
+          font-size: 19px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 100%;
+          // padding: 0 18px;
+        }
+      }
+    }
+
+    .name,
+    .exercise-name,
+    .description,
+    .recently-added {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+    }
+
+    .buttons {
+      display: flex;
+      align-items: center;
+      justify-content: end;
+
+      button {
+        border-radius: 8px;
+        background: #202225;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        width: 196.522px;
+        height: 53.267px;
+        flex-shrink: 0;
+        color: #fff;
+        font-family: IRANSansX;
+        font-size: 19.98px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+      }
+    }
+
+    .recently-added {
+      row-gap: 9px;
+
+      .all-exercises {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 23px;
+
+        .exercise-card {
+          position: relative;
+          width: 183.026px;
+          height: 137.096px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2.784px;
+          background: #fff;
+          box-shadow: 0px 5.56733px 16.702px 0px rgba(0, 0, 0, 0.1);
+          color: rgba(0, 0, 0, 0.4);
+          text-align: center;
+          font-family: "IRANSansX";
+          font-size: 22.269px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 100%;
+
+          p {
+            margin: 0px;
+          }
+
+          a {
+            position: absolute;
+            top: 9px;
+            right: 11.53px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.uplaod_table_modal {
+  .modal-content {
+    padding: 5px 20px;
+  }
+  .modal-body {
+    // border: 1px solid #2b54ff;
+    border-radius: 8px;
+    .input {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      .table-name {
+        border: 1px solid #202225;
+        padding: 10px;
+        border-radius: 4px;
+        background: #fff;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      }
+    }
+  }
+}
+
+.edit_exercise_modal {
+  .modal-body {
+    textarea {
+      box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      border: 1px solid #202225;
+      padding: 5px 13.5px;
+    }
+  }
+  .modal-footer {
+    .close {
+      background-color: #000;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .create-database {
+    padding: 40px 30px 70px 40px;
+    height: calc(100vh - 100px);
+    .inner-content {
+      display: flex;
+      flex-direction: column;
+      flex-direction: column;
+      padding-right: 50px;
+      row-gap: 23px;
+
+      input,
+      textarea {
+        padding: 10px 20px;
+      }
+
+      textarea {
+        min-height: 250.416px;
+      }
+
+      select {
+        width: 50%;
+        appearance: none; /* Remove default arrow in some browsers */
+        padding: 10px 20px; /* Adjust padding to increase the clickable area */
+        //width: calc(100% - 30px); /* Adjust width to account for padding */
+        border-radius: 8px;
+        border: 1px solid #202225;
+        background: #fff;
+        background-image: url("../../../../assets/icons/drop-down.png"); /* Replace with your own arrow icon */
+        background-repeat: no-repeat;
+        background-position: calc(100% - 23px) center; /* Adjust position to align with the right edge */
+        background-size: 23px 23px;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        // background: #fff;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        // color: #d6d5d5;
+        font-family: IRANSansX;
+        font-size: 16px;
+        font-weight: 300;
+
+        &::-ms-expand {
+          display: none; /* Remove the arrow in IE10 and IE11 */
+        }
+
+        option {
+          // color: #d6d5d5;
+          font-family: IRANSansX;
+          font-size: 16px !important;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+
+      .exercise-name {
+        .exercise-inner {
+          display: flex;
+          align-items: center;
+          column-gap: 20px;
+
+          select {
+            color: #202225;
+          }
+
+          button {
+            width: 150px;
+            height: 49px;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        column-gap: 18px;
+
+        button {
+          padding: 10px 20px;
+          font-size: 17px;
+        }
+      }
+
+      .recently-added {
+        row-gap: 9px;
+
+        .all-exercises {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+
+          .exercise-card {
+            position: relative;
+            width: 183.026px;
+            height: 137.096px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 2.784px;
+            background: #fff;
+            box-shadow: 0px 5.56733px 16.702px 0px rgba(0, 0, 0, 0.1);
+            color: rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-family: "IRANSansX";
+            font-size: 22.269px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 100%;
+
+            a {
+              position: absolute;
+              top: 9px;
+              right: 11.53px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .create-database {
+    padding: 50px 20px 20px 20px;
+
+    .createdatabase-btn {
+      font-size: 15px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      padding: 6px;
+    }
+
+    .inner-content {
+      display: flex;
+      flex-direction: column;
+      padding-right: 0px;
+      row-gap: 15px;
+
+      .soccercountry {
+        // justify-content: center;
+        // display: grid;
+        // grid-template-columns: auto auto;
+        gap: 10px;
+
+        .soccer {
+          gap: 5px;
+          padding: 5px 10px;
+        }
+      }
+
+      label {
+        font-size: 18px;
+      }
+
+      input,
+      textarea {
+        font-size: 15px;
+        padding: 10px;
+      }
+
+      select {
+        width: 100%;
+        appearance: none; /* Remove default arrow in some browsers */
+        padding: 10px 20px; /* Adjust padding to increase the clickable area */
+        //width: calc(100% - 30px); /* Adjust width to account for padding */
+        border-radius: 8px;
+        border: 1px solid #202225;
+        background: #fff;
+        background-image: url("../../../../assets/icons/drop-down.png"); /* Replace with your own arrow icon */
+        background-repeat: no-repeat;
+        background-position: calc(100% - 23px) center; /* Adjust position to align with the right edge */
+        background-size: 23px 23px;
+        appearance: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        // background: #fff;
+        box-shadow: 0px 6px 16px 0px rgba(0, 0, 0, 0.15);
+        color: #d6d5d5;
+        font-family: IRANSansX;
+        font-size: 16px;
+        font-weight: 300;
+
+        &::-ms-expand {
+          display: none; /* Remove the arrow in IE10 and IE11 */
+        }
+
+        option {
+          color: #d6d5d5;
+          font-family: IRANSansX;
+          font-size: 16px !important;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+
+      textarea {
+        min-height: 100px;
+      }
+
+      .exercise-name {
+        .exercise-inner {
+          row-gap: 10px;
+          flex-direction: column;
+          align-items: flex-start;
+
+          button {
+            width: 150px;
+            height: 40px;
+            font-size: 15px;
+          }
+        }
+      }
+
+      .name,
+      .exercise-name,
+      .description,
+      .recently-added {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+      }
+
+      .buttons {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        column-gap: 10px;
+
+        button {
+          padding: 10px 15px;
+          font-size: 15px;
+          width: 160px;
+          height: 45px;
+        }
+      }
+
+      .recently-added {
+        row-gap: 9px;
+
+        .all-exercises {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 15px;
+
+          .exercise-card {
+            width: unset;
+            height: 137.096px;
+            font-size: 18px;
+
+            a {
+              position: absolute;
+              top: 9px;
+              right: 11.53px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

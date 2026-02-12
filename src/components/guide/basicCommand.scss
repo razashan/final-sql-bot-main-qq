@@ -1,0 +1,114 @@
+.sql-basic-command {
+  //   background-color: red ;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+
+  //
+  .title {
+    font-family: Volkhov;
+    font-size: 36px;
+    font-weight: 700;
+  }
+
+  // btns
+  .btns {
+    display: flex;
+    justify-content: space-between;
+
+    .guide-btn {
+      background-color: #43dde7;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 7px;
+      font-size: 16px;
+      font-weight: 500;
+      color: white;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+
+  .content {
+    // background-color: red;
+
+    //----------------------- Table -----------------
+
+    .ant-table-pagination {
+      display: none;
+    }
+
+    thead,
+    tbody,
+    tfoot,
+    tr,
+    td,
+    th {
+      border: none !important;
+      border-style: none !important;
+    }
+
+    .ant-table-cell::before {
+      display: none;
+    }
+
+    .ant-table-tbody {
+      border: none;
+    }
+    .ant-table-tbody .ant-table-row:hover {
+      border: 2px solid red;
+      // background-color: green;
+    }
+
+    .table-command {
+      width: 150px;
+    }
+    .table-catg {
+      width: 150px;
+      // background-color: green;
+    }
+    .table-desc {
+      max-width: 400px;
+    }
+    .table-example {
+      max-width: 400px;
+    }
+  }
+
+  // text-content
+  .text-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: black;
+
+    span {
+      font-size: 16px;
+      font-weight: 600;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .title{
+    font-size: 22px !important;
+    // background-color: red;
+  }
+  // table-cell-settings
+  .table-command {
+    max-width: 100px;
+    // background-color: red;
+  }
+  .table-catg {
+    max-width: 70px;
+    // background-color: green;
+  }
+  .table-desc {
+    width: 300px;
+  }
+  .table-example {
+    width: 300px;
+  }
+}

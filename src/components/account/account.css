@@ -1,0 +1,396 @@
+/* @import url('https://fonts.cdnfonts.com/css/jk-abode');
+@import url('https://fonts.cdnfonts.com/css/iransansx'); */
+@font-face {
+  font-family: "JK Abode";
+  src: url(/public/font/JKAbode-Demo.ttf);
+}
+
+@font-face {
+  font-family: "IRANSansX";
+  src: url(/public/font/IRANSans\ 400.ttf);
+}
+
+.sign-up-wrapper2 {
+  height: 100% !important;
+}
+
+.sign-up-wrapper {
+  /* background-image: url(../../assets/image/signup-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+  overflow: auto;
+  /* background-color: black; */
+}
+
+.sign-up-wrapper h1 {
+  font-family: "JK Abode", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 120px;
+  /* text-align: center; */
+}
+
+.signup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* gap: 40px; */
+  width: 30%;
+}
+
+.top_right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.account_elips {
+  position: absolute;
+  left: 0;
+}
+
+.bottom_right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.sign-up-input {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+
+.sign-up-input label {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.sign-up-input input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 50px; */
+
+  /* height: 80px; */
+
+  border: none;
+  border-bottom: 1px solid #999999;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "IRANSansX", sans-serif;
+}
+
+.inputEmpty {
+  border-bottom: 1px solid rgb(218, 54, 54) !important;
+}
+
+.signup-button {
+  /* max-width: 420px; */
+  width: 100%;
+
+  /* width: 400px; */
+  /* padding: 10px 219px; */
+
+  background-color: #000000;
+  color: white;
+  font-size: 24px;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  padding: 10px 0;
+}
+
+.sign-up-wrapper p {
+  color: #999999;
+  font-family: "IRANSansX", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.sign-up-wrapper .social-icon {
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .top_right {
+    display: none;
+  }
+
+  .bottom_right {
+    display: none;
+  }
+
+  .account_elips {
+    display: none;
+  }
+
+  .sign-up-input {
+    align-items: center;
+  }
+
+  .signup {
+    width: 100% !important;
+  }
+
+  .signup .login_heading {
+    margin-top: 20px !important;
+    margin-bottom: 80px !important;
+    font-size: 45px !important;
+  }
+
+  .forget {
+    width: 100% !important;
+  }
+
+  .forget .forget_heading {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 120px;
+    font-size: 40px !important;
+  }
+
+  /* h1 {
+    font-size: 25px !important;
+  } */
+
+  .sign-up-wrapper {
+    background-image: none;
+    width: 100%;
+  }
+
+  .sign-up-input label {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .sign-up-input input {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .signup-button {
+    max-width: 60%;
+    font-size: 18px;
+  }
+
+  .signuplink {
+    flex-wrap: wrap;
+    justify-content: space-between !important;
+  }
+
+  .signuplink p {
+    font-size: 14px;
+  }
+
+  .sign-up-wrapper h1 {
+    font-size: 35px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+
+  .signup {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  .sign-up-wrapper h1 {
+    font-size: 70px !important;
+    margin-bottom: 50px;
+  }
+
+  .sign-up-input label {
+    margin-bottom: 30px;
+
+    div {
+      position: relative;
+      left: -13px !important;
+    }
+  }
+
+  .top_right {
+    width: 300px;
+    display: none;
+  }
+
+  .top_right img {
+    width: 100%;
+  }
+
+  .bottom_right {
+    display: none;
+    width: 300px;
+  }
+
+  .bottom_right img {
+    width: 100%;
+  }
+
+  .account_elips {
+    display: none;
+
+    width: 200px;
+  }
+
+  .account_elips img {
+    width: 100%;
+  }
+
+  .sign-up-wrapper {
+    padding: 40px;
+  }
+
+  .signup {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 901px) and (max-width: 1200px) {
+  .sign-up-wrapper h1 {
+    font-size: 70px !important;
+    margin-bottom: 50px;
+  }
+
+  .sign-up-input label {
+    margin-bottom: 30px;
+  }
+
+  .top_right {
+    width: 300px;
+  }
+
+  .top_right img {
+    width: 100%;
+  }
+
+  .bottom_right {
+    width: 300px;
+  }
+
+  .bottom_right img {
+    width: 100%;
+  }
+
+  .account_elips {
+    width: 200px;
+  }
+
+  .account_elips img {
+    width: 100%;
+  }
+
+  .sign-up-input input {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1201px) and (max-width: 1530px) {
+  .sign-up-wrapper h1 {
+    font-size: 70px !important;
+    margin-bottom: 50px;
+  }
+
+  .sign-up-input label {
+    margin-bottom: 30px;
+
+    div {
+      position: relative;
+      right: 17px;
+    }
+
+  }
+
+  .top_right {
+    width: 300px;
+  }
+
+  .top_right img {
+    width: 100%;
+  }
+
+  .bottom_right {
+    width: 300px;
+  }
+
+  .bottom_right img {
+    width: 100%;
+  }
+
+  .account_elips {
+    width: 200px;
+  }
+
+  .account_elips img {
+    width: 100%;
+  }
+
+  .sign-up-input input {
+    font-size: 20px;
+  }
+
+  /* .sign-up-wrapper2 .sign-up-input label {
+    margin-bottom: 15px;
+  } */
+}
+
+@media screen and (min-width: 1501px) and (max-width: 1830px) {
+  .sign-up-wrapper h1 {
+    font-size: 70px;
+  }
+
+  .top_right {
+    width: 400px;
+  }
+
+  .top_right img {
+    width: 100%;
+  }
+
+  .bottom_right {
+    width: 400px;
+  }
+
+  .bottom_right img {
+    width: 100%;
+  }
+
+  .account_elips {
+    width: 300px;
+  }
+
+  .account_elips img {
+    width: 100%;
+  }
+}
+
+.warning {
+  color: red;
+}
+
+.error {
+  width: 100%;
+  color: red;
+}

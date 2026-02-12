@@ -1,0 +1,775 @@
+.about-page {
+  //   typography
+  h1 {
+    font-size: 96px;
+    font-family: Volkhov;
+  }
+  h2 {
+    font-size: 64px;
+    font-family: Volkhov;
+  }
+  h3 {
+    font-size: 48px;
+    font-family: Volkhov;
+
+    span {
+      color: #43dde7;
+    }
+  }
+  h4 {
+    font-size: 24px;
+    font-family: Volkhov;
+    font-weight: 700;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    // background-color: pink;
+  }
+
+
+  .font-sec {
+    font-size: 20px;
+    font-family: "Volkhov";
+  }
+
+  //   colors
+  .color-text-sec {
+    color: #43dde7;
+  }
+
+  // About section
+  .aboutUs-text-sec {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 300px;
+    padding-right: 300px;
+    position: relative;
+    z-index: 100;
+    // background-color: red;
+    overflow: hidden;
+
+    .about-vector {
+      // background-color: green;
+      position: absolute;
+      z-index: -10;
+      top: -130px;
+      right: 0;
+      width: 100%;
+    }
+
+    .aboutPrimary_btn {
+      background-color: transparent;
+      transition: background-color 0.5s ease;
+      border: 2px solid #000;
+      border-radius: 60px;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 15px 30px;
+    }
+
+    .aboutPrimary_btn:hover {
+      background-color: #43dde7;
+      color: #fff;
+    }
+
+    h2 {
+      text-align: center;
+    }
+    p {
+      max-width: 1100px;
+      text-align: center;
+    }
+  }
+
+  //   Story Section
+  .story-sec {
+    background-color: black;
+    padding-left: 300px;
+    padding-right: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .img-left {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      //   size: 0px;
+    }
+
+    .img-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .story-left {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 0px;
+      padding-top: 60px;
+      color: #fff;
+    }
+
+    .story-right {
+      position: relative;
+      padding-top: 60px;
+
+      .bulb {
+        position: relative;
+        z-index: 1;
+      }
+
+      .bulb-light {
+        position: absolute;
+        height: 220px;
+        left: 0;
+        right: 0;
+        top: 0px;
+        z-index: 100;
+      }
+    }
+  }
+
+  //   Mession Section
+  .mession-sec {
+    padding: 50px 300px;
+    position: relative;
+    // background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    .img-left {
+      position: absolute;
+      left: 0;
+      top: 0px;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .img-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: -1;
+      height: 100%;
+    }
+
+    .mession-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 50px;
+      align-items: center;
+
+      .top-left {
+        width: 50%;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .top-right {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 50%;
+      }
+    }
+
+    .mession-bottom {
+      max-width: 900px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 30px;
+      // margin-top: 20px;
+
+      .main-text {
+        text-align: center;
+      }
+
+      //   QAS
+      .qas-main {
+        // background-color: red;
+        display: flex;
+        justify-content: space-between;
+        gap: 90px;
+
+        .qas {
+          display: flex;
+          gap: 10px;
+        }
+
+        .qas-left {
+          display: flex;
+          // background-color: red;
+          flex-direction: column;
+          gap: 90px;
+        }
+
+        .qas-right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 90px;
+        }
+      }
+    }
+  }
+
+  //   Serve Section
+  .serve-sec {
+    background-color: black;
+    color: #fff;
+    padding: 50px 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    overflow-x: hidden;
+
+    .img-left {
+      height: 100%;
+      width: 400px;
+      position: absolute;
+      left: -200px;
+      top: 0;
+    }
+    .img-right {
+      height: 100%;
+      width: 400px;
+      position: absolute;
+      right: -200px;
+      top: 0;
+    }
+
+    .serve-top {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .serve-bottom {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      // margin-top: 50px;
+      align-items: center;
+
+      .serv-box1 {
+        // background-color: red;
+        display: flex;
+        gap: 50px;
+      }
+
+      .serv-box2 {
+        // background-color: green;
+        display: flex;
+        gap: 50px;
+      }
+
+      .serv-box {
+        flex-shrink: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+        max-width: 200px;
+        text-align: center;
+      }
+    }
+  }
+
+  // Vision Section
+  .vision-sec {
+    padding: 70px 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: auto;
+    // background-color: red;
+
+    .vision-left {
+      width: 50%;
+      display: flex;
+      justify-content: center;
+      img {
+        max-width: 500px;
+      }
+    }
+
+    .vision-right {
+      // width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: end;
+      gap: 20px;
+
+      .join_btn {
+        // background-color: red;
+        font-size: 16px;
+        padding: 10px 60px;
+      }
+
+      p {
+        text-align: end;
+        max-width: 500px;
+      }
+    }
+  }
+
+  .mission-btn {
+    // background-color: red;
+
+    .join_btn {
+      // background-color: red;
+      font-size: 16px;
+      padding: 10px 60px;
+    }
+  }
+
+  //
+  //
+}
+
+@media (max-width: 1390px) {
+  .about-page {
+    h1 {
+      font-size: 96px;
+    }
+    h2 {
+      font-size: 64px;
+    }
+
+    h3 {
+      font-size: 48px;
+      span {
+        color: #43dde7;
+      }
+    }
+    h4 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    // About section
+    .aboutUs-text-sec {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    //   Story Section
+    .story-sec {
+      padding-left: 50px;
+      padding-right: 50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .img-left {
+        display: none;
+      }
+      .img-right {
+        display: none;
+      }
+
+      .story-left {
+        // display: flex;
+        // flex-direction: column;
+        align-items: center;
+        p {
+          text-align: center;
+        }
+        gap: 10px;
+        padding: 10px 0px;
+        padding-top: 60px;
+        color: #fff;
+      }
+
+      .story-right {
+        // background-color: green;
+        position: relative;
+        padding-top: 60px;
+
+        img {
+          width: 100%;
+        }
+
+        .bulb {
+          position: relative;
+          z-index: 1;
+        }
+
+        .bulb-light {
+          position: absolute;
+          height: 220px;
+          border-radius: 100%;
+          left: 0;
+          right: 0;
+          top: -60px;
+          rotate: 180deg;
+          z-index: 100;
+          // background-color: red;
+        }
+      }
+    }
+
+    //   Serve Section
+    .serve-sec {
+      padding: 50px 50px;
+      color: #fff;
+
+      .img-left {
+        display: none;
+      }
+
+      .img-right {
+        display: none;
+      }
+    }
+
+    // Vision Section
+    .vision-sec {
+      padding: 20px 50px;
+
+      .vision-left {
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .vision-right {
+        // background-color: red;
+        align-items: end;
+      }
+    }
+
+    //   Mession Section
+    .mession-sec {
+      padding: 50px 50px;
+
+      .img-left {
+        display: none;
+      }
+
+      .img-right {
+        display: none;
+      }
+
+      .mession-top {
+        // flex-direction: column;
+        gap: 50px;
+        align-items: center;
+
+        .top-left {
+          width: 50%;
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .top-right {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+          gap: 15px;
+
+          .mission-btn {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+            // background-color: red;
+
+            .join_btn {
+              // background-color: red;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Screen 1024px
+@media (max-width: 1024px) {
+  .about-page {
+    h1 {
+      font-size: 64px;
+    }
+    h2 {
+      font-size: 34px;
+    }
+
+    h3 {
+      font-size: 30px;
+      span {
+        color: #43dde7;
+      }
+    }
+    h4 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    // About section
+    .aboutUs-text-sec {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+    // Vision Section
+    .vision-sec {
+      padding: 50px 20px;
+      flex-direction: column;
+
+      .vision-left {
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 300px;
+        }
+      }
+
+      .vision-right {
+        justify-content: center;
+        align-items: center;
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    //
+    .serve-bottom {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+    }
+    //   Mession Section
+    .mession-sec {
+      padding: 50px 50px;
+
+      .img-left {
+        display: none;
+      }
+
+      .img-right {
+        display: none;
+      }
+
+      .mession-top {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+
+        .top-left {
+          width: 50%;
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .top-right {
+          // width: 50%;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          align-items: start;
+          gap: 15px;
+
+          .mission-btn {
+            width: 100%;
+            display: flex;
+            justify-content: start;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Screen 600px
+@media (max-width: 600px) {
+  .about-page {
+    h1 {
+      font-size: 40px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+    h3 {
+      font-size: 26px;
+      span {
+        color: #43dde7;
+      }
+    }
+    h4 {
+      font-size: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+
+    // About section
+    .aboutUs-text-sec {
+      padding: 30px 20px;
+
+      h2 {
+        text-align: center;
+      }
+      p {
+        text-align: center;
+      }
+    }
+
+    //   Story Section
+    .story-sec {
+      padding-left: 20px;
+      padding-right: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .img-left {
+        display: none;
+      }
+      .img-right {
+        display: none;
+      }
+    }
+
+    //   Serve Section
+    .serve-sec {
+      padding: 30px 20px;
+      // background-color: red;
+      color: #fff;
+
+      .serve-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+
+        .serv-box1 {
+          flex-direction: column;
+          gap: 50px;
+        }
+
+        .serv-box2 {
+          flex-direction: column;
+          gap: 50px;
+        }
+      }
+    }
+
+    // Vision Section
+    .vision-sec {
+      padding: 30px 20px;
+      flex-direction: column;
+
+      .vision-left {
+        display: flex;
+        justify-content: center;
+        img {
+          max-width: 300px;
+        }
+      }
+
+      .vision-right {
+        justify-content: center;
+        align-items: center;
+        p {
+          text-align: center;
+        }
+      }
+    }
+
+    //   Mession Section
+    .mession-sec {
+      padding: 30px 20px;
+
+      .img-left {
+        display: none;
+      }
+
+      .img-right {
+        display: none;
+      }
+
+      .mession-top {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        width: 100%;
+
+        .top-left {
+          width: 100%;
+          img {
+            max-width: 100%;
+          }
+        }
+
+        .top-right {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 15px;
+
+          p {
+            text-align: center;
+          }
+
+          .mission-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+      .mession-bottom {
+        // background-color: red;
+
+        .qas-main {
+          flex-direction: column;
+          gap: 50px;
+
+          .qas-left {
+            gap: 50px;
+          }
+
+          .qas-right {
+            gap: 50px;
+          }
+        }
+      }
+    }
+  }
+}
